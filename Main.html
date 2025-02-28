@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="Main.css" />
+    <script>
+      function showSection(sectionId) {
+        // Hide all sections
+        document.querySelectorAll(".section-content").forEach((section) => {
+          section.style.display = "none";
+        });
+        // Show the selected section
+        document.getElementById(sectionId).style.display = "block";
+      }
+    </script>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo">
+        <img src="images/NA.png" alt="Logo" />
+      </div>
+      <hr class="logo-line" />
+      <ul class="nav-menu">
+        <li><a href="#" onclick="showSection('home')">HOME</a></li>
+        <li><a href="#" onclick="showSection('profile')">PROFILE</a></li>
+        <li><a href="#" onclick="showSection('categories')">CATEGORIES</a></li>
+        <li><a href="#" onclick="showSection('wallet')">WALLET</a></li>
+        <li><a href="#" onclick="showSection('aboutus')">ABOUT US</a></li>
+        <li><a href="#" onclick="showSection('logout')">LOG OUT</a></li>
+      </ul>
+    </div>
+
+    <div class="main-content">
+      <section id="home" class="section-content">WELCOME TO HOME</section>
+      <section id="profile" class="section-content" style="display: none">
+        PROFILE SECTION
+      </section>
+      <section id="categories" class="section-content" style="display: none">
+        CATEGORIES SECTION
+      </section>
+      <section id="wallet" class="section-content" style="display: none">
+        WALLET SECTION
+      </section>
+      <section id="aboutus" class="section-content" style="display: none">
+        ABOUT US SECTION
+      </section>
+      <section id="logout" class="section-content" style="display: none">
+        YOU HAVE LOGGED OUT
+      </section>
+    </div>
+  </body>
+</html>

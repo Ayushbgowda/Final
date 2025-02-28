@@ -1,0 +1,135 @@
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        background: url("images/img1.avif") no-repeat center center/cover;
+      }
+      
+  body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    filter: blur(8px);
+    z-index: -1;
+  }
+      .sidebar {
+        width: 250px;
+        background: #f8f9fa;
+        height: 100vh;
+        padding: 20px;
+        position: fixed;
+        left: 0;
+        top: 0;
+      }
+      .sidebar .logo img {
+        width: 100%;
+        height: auto;
+      }
+      .nav-menu {
+        list-style: none;
+        padding: 0;
+        margin-top: 30px;
+      }
+      .nav-menu li {
+        padding: 15px 10px;
+      }
+      .nav-menu a {
+        text-decoration: none;
+        color: #00346c;
+        font-size: 18px;
+        font-weight: bold;
+        display: block;
+      }
+      .nav-menu a:hover {
+        color: #c40000;
+      }
+      .main-content {
+        margin-left: 250px;
+        padding: 40px;
+        width: calc(100% - 250px);
+      }
+      .form-section,
+      .data-table {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+      }
+      .form-section input,
+      .form-section select,
+      .form-section textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      .form-section button {
+        background: #8cc63f;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+      }
+      .data-table table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      .data-table th,
+      .data-table td {
+        padding: 10px;
+        border: 1px solid #ddd;
+        text-align: left;
+      }
+      .actions button {
+        border: none;
+        padding: 5px;
+        margin: 2px;
+        cursor: pointer;
+      }
+      .edit-btn {
+        background: blue;
+        color: white;
+      }
+      .delete-btn {
+        background: red;
+        color: white;
+      }
+      .view-btn {
+        background: green;
+        color: white;
+      }
+      .logo-line {
+        border: 1px solid #00346c;
+        margin: 10px 0;
+      }
+      .nav-box {
+        display: block;
+        padding: 10px;
+        text-align: center;
+        background: #00346c;
+        color: white;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background 0.3s;
+      }
+      .nav-box:hover {
+        background: red;
+      }
+      .section-content {
+        display: none;
+        padding: 20px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        margin: 20px 0;
+      }
+      
+    
